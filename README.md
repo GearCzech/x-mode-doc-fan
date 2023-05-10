@@ -74,6 +74,8 @@
 - If set to true, server can be visible in server list.
 - If set to false, the only way to connect to a server is by inputting ip and pressing connect in the bottom of serverlist.
 
+- As stated in original ReadMe.txt, using this option will expose your IP, be aware where you are hosting the server!
+
 ### WHITELIST
 - If set to true, users can only connect when they are whitelisted.
 - If set to false, everyone can connected. (except banned ones)
@@ -84,9 +86,41 @@
 - If set to true, server will automatically start games.
 
 # COMMANDS
+## Every commands listed here seem to be usable only in server console, not in-game chat.
 ### WHITELIST
 **- ONLY WORKS WHEN "whitelist" is set to TRUE in properties.txt**
 - User can be added by using **/whitelist** command or editing **whitelist.txt** file.
 - User can be removed using **/unwhitelist** command or editing **whitelist.txt** file.
 - Supports username or Steam64 ID (also called Community ID)
 	- Steam and Steam3 IDs don't seem to work.
+
+### ADMIN
+- User can be added by using **/admin** command or editing **adminlist.txt** file.
+- User can be removed using **/unadmin** command or editing **adminlist.txt** file.
+- Supports username or Steam64 ID (also called Community ID)
+	- Steam and Steam3 IDs don't seem to work.
+
+### BLACKLIST
+- User can be added by using **/blacklist** command or editing **blacklist.txt** file.
+- User can be removed using **/unblacklist** command or editing **blacklist.txt** file.
+- Supports username, Steam64 ID (also called Community ID) or IP Address
+	- Steam and Steam3 IDs doesn't seem to work.
+
+### /stop
+- Stops a server
+
+### /autostart
+- Will enable / disable autostart game loop
+
+### /playercount 
+- Will show how many players are connected on a server.
+
+### /playerlist
+- Will send a list of users that are currently connected.
+
+### /kick <nick>
+- Will kick a player
+- Only supports username as a parameter, other options like steamid and ip address doesn't seem to work.
+	
+### /balanceteams
+- Balances teams
