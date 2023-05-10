@@ -9,6 +9,8 @@
 - Go to https://xzippyzachx.itch.io/zippys-multiplayer-game
 - Download "Server_Linux_Community_v0.6.0.1.zip"
 - SSH into a linux server and create a directory (for example "xmodeserver")
+	- **ssh \<username>@\<server ip>**
+	- For example: **ssh root@123.456.78.910**
 - **cd** into a directory (for example **cd xmodeserver**)
 - Use **pwd** to view a location of the folder (should output something like **/root/xmodeserver**)
 - Go to a normal cmd and use **scp** command and copy **Server_Linux_Community_v0.6.0.1.zip** file to the server
