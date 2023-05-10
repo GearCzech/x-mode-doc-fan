@@ -50,4 +50,43 @@
 	- Logs folder
 - You can edit server info by editing **properties.txt**:
 	- using **nano properties.txt**
-	- you can edit name, set ip and port, set max players, tickrate, public or not, whitelist, autostart
+	- You can edit name, set ip and port, set max players, tickrate, public or not, whitelist, autostart
+
+## 1.2 PROPERTIES.TXT EDITING
+### Name
+- You can write sever name after "name" (for example "name Test Server")
+
+### IP
+- Replace "---.---.---.---" with ip address of your linux server
+
+### PORT
+- You can change it, or leave it as default (26955)
+
+### MAXPLAYERS
+- Limit is between 1k and 10k (dont ask me how i know this)
+
+### TICKRATE
+- Server tickrate
+	- 20 = update every 50ms, 40 = update every 25ms, etc.
+	- Optimal is **32** or **64**
+
+### ISPUBLIC
+- If set to true, server can be visible in server list.
+- If set to false, the only way to connect to a server is by inputting ip and pressing connect in the bottom of serverlist.
+
+### WHITELIST
+- If set to true, users can only connect when they are whitelisted.
+- If set to false, everyone can connected. (except banned ones)
+
+- User can be added to a whitelist by editing **whitelist.txt** file or using **/whitelist** command (For whitelisting visit /whitelist command part)
+
+### AUTOSTART
+- If set to true, server will automatically start games.
+
+# COMMANDS
+### WHITELIST
+**- ONLY WORKS WHEN "whitelist" is set to TRUE in properties.txt**
+- User can be added by using **/whitelist** command or editing **whitelist.txt** file.
+- User can be removed using **/unwhitelist** command or editing **whitelist.txt** file.
+- Supports username or Steam64 ID (also called Community ID)
+	- Steam and Steam3 IDs don't seem to work.
