@@ -1,1 +1,1 @@
-# x-mode-doc-fan
+# X-MODE FAN DOCUMENTATION by GearCzech
